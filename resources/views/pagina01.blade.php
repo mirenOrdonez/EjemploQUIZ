@@ -11,8 +11,7 @@
 
 @section('contenido')
     <p>Este es el body de esta página.</p>
-    <a href="{{ url('pregunta', ['Historia']) }}" class="btn btn-xs btn-info pull-right">Historia</a>
-    <a href="{{ url('pregunta', ['Economia']) }}" class="btn btn-xs btn-info pull-right">Economia</a>
-    <a href="{{ url('pregunta', ['Ingles']) }}" class="btn btn-xs btn-info pull-right">Ingles</a>
-    <a href="{{ url('api/preguntas', ['Historia']) }}" class="btn btn-xs btn-info pull-right">Historia pero un json solo</a>
+    <a href="{{ url('pregunta', ['Historia', Crypt::encrypt(0)]) }}" class="btn btn-xs btn-info pull-right">Historia</a>
+    <a href="{{ url('pregunta', ['Economia', Crypt::encrypt(0)]) }}" class="btn btn-xs btn-info pull-right">Economia</a>
+    <a href="{{ url('pregunta', ['Ingles', Crypt::encrypt(0)]) }}" class="btn btn-xs btn-info pull-right">Ingles</a>
 @endsection 
