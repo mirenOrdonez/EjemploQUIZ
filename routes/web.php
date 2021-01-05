@@ -22,3 +22,4 @@ Route::get('/pagina02/{tema}', function ($tema) {
 }); 
 
 Route::get('pregunta/{tema}/{marcador}', 'PreguntasController@carga_pregunta');
+

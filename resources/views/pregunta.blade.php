@@ -24,7 +24,7 @@
 </div>
 
 <script>
-    var pregunta = @json($pregunta)
+    var pregunta = @json($pregunta); 
 
     $('#marcador').html('{{$marcador}}');
 
